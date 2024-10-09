@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+:root {
+    --Orange: #f86c00;
+    --Activepink: #ffc3c3;
+    --Black: #181717;
+}
+
+#search-submit:hover {
+    cursor: pointer;
+    color: darkslategrey;
+}
+
+
+/*--------------main-container------- */
+
+.main-container {
+    background: #fff;
+    height: 100vh;
+    padding: 20px;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-container input {
+    width: 450px;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: #f8f5f5;
+}
+
+.top-container i {
+    font-size: 1.8rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #f8f5f5;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+
+/* nav */
+
+.nav-top1 a {
+    font-size: 1.2rem;
+    position: relative;
+    margin: 15px;
+    text-decoration: none;
+    position: relative;
+    color: var(--Orange);
+}
+
+.nav-top1 a:hover {
+    color: #545aff;
+    transition: 0.3s ease all;
+}
+
+
+/* login - signup */
+
+.nav-top2 button {
+    height: 35px;
+    width: 100px;
+    color: var(--Orange);
+    border: 2px solid #f86c00;
+    font-size: 1.03rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav-top2 button:hover {
+    background: var(--ActiveWhite);
+    transition: 0.2s ease all;
+}
+
+
+/* add-slide-container */
+
+.add-slide-container {
+    border: 1px solid #000000;
+    height: 250px;
+    margin: 20px 0;
+}
+
+
+/* sec-container */
+
+.sec-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu1 {
+    background: var(--Orange);
+    box-shadow: 5px 5px rgba(172, 172, 172, 0.8);
+    margin: 10px 0;
+}
+
+.nav-menu1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 15px;
+    position: relative;
+}
+
+.nav-menu1 a:hover {
+    color: var(--Activepink);
+    transition: 0.3s ease all;
+}
+
+.nav-menu1 i {
+    font-size: 1.8rem;
+}
+
+.top-sec-co1 {
+    display: flex;
+    align-items: center;
+}
+
+.top-sec-co1 i {
+    font-size: 2rem;
+    margin: 0 0 0 40px;
+    cursor: pointer;
+    color: var(--Black);
+    border: 3px solid var(--Black);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-pic1 {
+    height: 150px;
+    width: 150px;
+}
+
+.show-pic1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.Product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 1200px;
+    gap: 15px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.pic img {
+    max-width: 100%;
+    height: 190px;
+    left: 20px;
+
+
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.Price,
+.detail {
+    margin-top: 10px;
+}
+
+.main-ProD-box {
+    display: flex;
+}
+
+.card-Prod-box {
+    border: 1px solid #000000;
+    height: 500px;
+    width: 400px;
+}
+
+
+/* SLIDE PIC */
+
+.add-slides-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    border: 2px solid #333232;
+    overflow: hidden;
+    height: 500px;
+}
+
+
+/* Image */
+
+.slide img {
+    width: 100px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #adabab;
+}
+
+.slide {
+    display: none;
+}
+
+
+/* Fade in effect */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Dots */
+
+.dots {
+    text-align: center;
+    position: absolute;
+    top: 370px;
+    left: 600px;
+}
+
+.dot {
+    height: 3px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+/* Image */
+
+
+/* ปุ่มเลื่อนภาพ */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 190px;
+    width: auto;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* ปุ่มด้านซ้าย */
+
+.prev {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+    top: 245px;
+}
+
+
+/* ปุ่มด้านขวา */
+
+.next {
+    right: 10px;
+    border-radius: 0 3px 3px 0;
+    top: 245px;
+}
+
+
+/* ปุ่มเมื่อถูก hover */
+
+.prev:hover,
+.next:hover {
+    color: var(--Activepink);
+}
+
+
+.promotion-logo {
+    position: absolute; /* ใช้ตำแหน่งแบบ absolute */
+    top: 500px; /* กำหนดระยะห่างจากด้านบน */
+    right: 1180px; /* กำหนดระยะห่างจากด้านขวา */
+    z-index: 10; /* ให้โลโก้อยู่ด้านบน */
+}
+
+.promotion-logo img {
+    width: 30px; /* ปรับขนาดโลโก้ */
+    height: auto; /* รักษาสัดส่วน */
+}
+

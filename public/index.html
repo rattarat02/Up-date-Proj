@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Orderly</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logoorderly.webp"/>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="container">
+        <div id="preloader">
+            <div class="spinner"></div>
+        </div>
+        <!-- header -->
+        <div class="main-container">
+            <div class="top-container">
+                <!-- logo -->
+                <div class="logo-baner">
+                    <img src="" href="/public/index.html">
+                </div>
+                <!-- search -->
+                <div class="search">
+                    <input type="search" id="search" placeholder="ค้นหาสินค้า">
+                    <i class='bx bx-search' id="search-submit"></i>
+                </div>
+                <!-- nav  -->
+                <div class="nav-top1">
+                    <a href="#" id="G-pd1">สินค้าขายดี</a>
+                    <a href="#" id="G-pd2">สินค้าลดราคา</a>
+                    <a href="#" id="G-pd3">สินค้าใหม่</a>
+                    <a href="#" id="discount">รวมคูปองส่วนลด</a>
+                </div>
+                <div class="nav-top2">
+                    <button id="login"><a href="/login.html">เข้าสู่ระบบ</a></button>
+                    <button id="signup"><a href="/register.html">สมัครสมาชิก</a></button>
+                </div>
+            </div>
+            <!-- sec-container -->
+            <div class="add-slide-container">
+                <div class="slide-box">
+                    <div class="slideshow-container">
+                        <div class="slide fade">
+                            <img src="img/slide1.png" style="width:100%">
+                        </div>
+                        <div class="slide fade">
+                            <img src="img/slide2.png" style="width:100%">
+                        </div>
+                        <div class="slide fade">
+                            <img src="img/slide3.png" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-container">
+                <div class="top-sec-co1">
+                    <div class="nav-menu1">
+                        <a href="#">อาหารและเครื่องดื่ม</a>
+                        <a href="#">ขนม</a>
+                        <a href="#">แม่และเด็ก</a>
+                        <a href="#">เครื่องใช้ไฟฟ้า</a>
+                        <a href="#">เครื่องสำอาง</a>
+                        <a href="#">สุขภาพออกกำลังกาย</a>
+                        <a href="#">อาหารสัตว์</a>
+                        <a href="#">แฟชั่น</a>
+                        <a href="#">อื่นๆ</a>
+                    </div>
+                    <i class='bx bx-cart'></i>
+                </div>
+            </div>
+            <!-- Product container -->
+            <div class="main-ProD-box">
+                <div class="promotion-logo">
+                    <img src="img/promotion.png" alt="Promotion Logo">
+                </div>
+                <div class="Product-container" id="productList">
+                    <!-- Product cards will be dynamically inserted here -->
+                </div>
+                <div class="promotion-card">
+                    <h2><font color=red><p>โปรโมชั่น</p></font></h2>
+                    <div class="card-Prod-box">
+                        <!-- Add promotion details or dynamic content here -->
+                    </div>
+                </div>
+            </div>
+
+            <script src="script/product.js"></script>
+            <script src="script/search.js"></script>
+            <script src="script/basket.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

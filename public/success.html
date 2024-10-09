@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/success.css">
+    <title>Success</title>
+</head>
+<body>
+    <div class="modal" id="customAlert">
+        <div class="modal-content">
+            <h2 id="modalMessage"></h2>
+            <button onclick="closeModal()">ตกลง</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Success Page</h1>
+        <p>Redirecting to the homepage...</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+    const params = new URLSearchParams(window.location.search);
+    const message = params.get('message');
+    let alertMessage = '';
+
+    if (message === 'register_success') {
+        alertMessage = 'สมัครสมาชิกสำเร็จ!';
+    } else if (message === 'login_success') {
+        alertMessage = 'เข้าสู่ระบบสำเร็จ!';
+    }
+
+    if (alertMessage) {
+        showModal(alertMessage);
+    }
+};
+
+function showModal(message) {
+    const modal = document.getElementById('customAlert');
+    const modalMessage = document.getElementById('modalMessage');
+    modalMessage.innerText = message;
+    modal.style.display = 'flex';
+}
+
+function closeModal() {
+    const modal = document.getElementById('customAlert');
+    modal.style.display = 'none';
+    window.location.href = 'index.html'; // เด้งกลับไปหน้า index.html หลังจากปิด modal
+}
+    </script>
+</body>
+</html>

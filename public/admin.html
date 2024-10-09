@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Products</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Manage Products</h1>
+        <!-- Form for Adding a Product -->
+        <div class="form-container">
+            <h2>Add Product</h2>
+            <form id="addProductForm">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required>
+
+                <label for="productPrice">Price:</label>
+                <input type="number" id="productPrice" name="productPrice" required>
+
+                <label for="productPromotion">Promotion:</label>
+                <input type="text" id="productPromotion" name="productPromotion">
+
+                <label for="productDetail">Detail:</label>
+                <textarea id="productDetail" name="productDetail"></textarea>
+
+                <label for="productImage">Product Image:</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+
+        <!-- Display Products for Editing or Deleting -->
+        <div class="product-list">
+            <h2>Product List</h2>
+            <div id="productsContainer"></div>
+        </div>
+    </div>
+
+    <script src="/script/Product.js"></script>
+</body>
+</html>
